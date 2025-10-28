@@ -83,15 +83,15 @@ FinSummarizer/
 ---
 
 ## 🛠️ Tech Stack
-| Category       | Tools / Frameworks |
-|---|--------------|
-| **Language**   | Python 3.11 |
-| **LLM Framework** | LangChain |
-| **Generative AI Models** | OpenAI GPT-4 or Anthropic Claude |
-| **Web Framework** | Streamlit |
-| **Deployment** | Hugging Face Spaces / Streamlit Cloud |
-| **Version Control** | Git + GitHub |
-| **Containerization** | Docker |
+| Category                 | Tools / Frameworks                    |
+|--------------------------|---------------------------------------|
+| **Language**             | Python 3.11                           |
+| **LLM Framework**        | LangChain                             |
+| **Generative AI Models** | OpenAI GPT-4 or Anthropic Claude      |
+| **Web Framework**        | Streamlit                             |
+| **Deployment**           | Hugging Face Spaces / Streamlit Cloud |
+| **Version Control**      | Git + GitHub                          |
+| **Containerization**     | Docker                                |
 
 
 ## ⚙️ Installation & Setup
