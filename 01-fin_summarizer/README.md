@@ -1,7 +1,8 @@
 
 # 💹 FinSummarizer – AI-Powered Financial Report Summarizer
+End-to-end AI Product demo: from dataset ingestion → summarization → deployment → KPI tracking.
 
-FinSummarizer is a **Generative AI-powered tool** that ingests complex financial datasets (CSV format) and automatically generates **concise, human-readable summaries**.  
+FinSummarizer is a **Generative AI-powered tool** that transforms raw financial datasets (CSV format) and automatically generates **concise, human-readable summaries**.  
 It helps **finance professionals, product teams, and decision-makers** quickly understand trends, anomalies, and key metrics without manually parsing large datasets.
 
 This project is designed to **showcase end-to-end AI Product Management skills**, combining **technical AI implementation** with **PM artifacts** such as a sanitized PRD, KPIs, and deployment strategy.
@@ -27,11 +28,11 @@ This project is designed to **showcase end-to-end AI Product Management skills**
 > FinSummarizer leverages **Large Language Models (LLMs)** to automatically generate **executive-ready summaries**, accelerating decision-making while reducing manual effort.
 
 ### **Primary KPIs**
-| KPI | Target Value | Why It Matters |
-|---|--------------|----------------|
-| Summarization Accuracy | > 80% | Ensures the summaries are reliable for decision-making. |
-| Processing Speed | < 10 sec for 1MB CSV | Smooth user experience. |
-| User Satisfaction | 4.5/5+ | Measured via feedback form. |
+| KPI                    | Target Value         | Why It Matters                                          |
+|------------------------|----------------------|---------------------------------------------------------|
+| Summarization Accuracy | > 80%                | Ensures the summaries are reliable for decision-making. |
+| Processing Speed       | < 10 sec for 1MB CSV | Smooth user experience.                                 |
+| User Satisfaction      | 4.5/5+               | Measured via feedback form.                             |
 
 
 ## 🔄 High-Level Flow
@@ -83,15 +84,15 @@ FinSummarizer/
 ---
 
 ## 🛠️ Tech Stack
-| Category                 | Tools / Frameworks                    |
-|--------------------------|---------------------------------------|
-| **Language**             | Python 3.11                           |
-| **LLM Framework**        | LangChain                             |
-| **Generative AI Models** | OpenAI GPT-4 or Anthropic Claude      |
-| **Web Framework**        | Streamlit                             |
-| **Deployment**           | Hugging Face Spaces / Streamlit Cloud |
-| **Version Control**      | Git + GitHub                          |
-| **Containerization**     | Docker                                |
+| Category                 | Tools / Frameworks                                                  |
+|--------------------------|---------------------------------------------------------------------|
+| **Language**             | Python 3.11                                                         |
+| **LLM Framework**        | ![LangChain](https://img.shields.io/badge/LangChain-Framework-blue) |
+| **Generative AI Models** | OpenAI GPT-4 or Anthropic Claude                                    |
+| **Web Framework**        | ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)        |
+| **Deployment**           | Hugging Face Spaces / Streamlit Cloud                               |
+| **Version Control**      | Git + GitHub                                                        |
+| **Containerization**     | ![Docker](https://img.shields.io/badge/Docker-Ready-green)          |
 
 
 ## ⚙️ Installation & Setup
@@ -134,8 +135,8 @@ Example tests included:
 ---
 
 ## 🌟 Future Improvements
-- Support **multilingual summarization** (e.g., Hindi, Spanish).
 - Build **trend detection and anomaly insights** in addition to summaries.
+- Support **multilingual summarization** (e.g., Hindi, Spanish).
 - Integrate with **financial APIs** (e.g., Bloomberg, Yahoo Finance).
 - Add **user authentication** and role-based access control.
 - Deploy on a **scalable AWS architecture** for enterprise readiness.
@@ -168,7 +169,7 @@ docker run -p 8501:8501 finsummarizer
 **Vedika Gupta**  
 AI Product Manager | Building Generative AI Systems  
 - GitHub: [github.com/vedika-gupta](https://github.com/vedika2609)  
-- LinkedIn: [linkedin.com/in/vedika-gupta](htpps://www.linkedin.com/in/vedika26gupta)
+- LinkedIn: [linkedin.com/in/vedika-gupta](htpps://www.linkedin.com/in/vedika26gupta/)
 
 ---
 
