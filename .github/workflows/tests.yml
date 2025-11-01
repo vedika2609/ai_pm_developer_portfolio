@@ -1,14 +1,14 @@
-name: 🧪 FinSummarizer Tests
+name: 🧪 Run Tests & Upload Coverage for All Projects
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   test:
-    name: Run Unit & Integration Tests
+    name: Run Tests for Each Subproject
     runs-on: ubuntu-latest
 
     steps:
@@ -20,21 +20,43 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 📦 Install dependencies
+      - name: 🔍 Discover all project folders
+        id: projects
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          # Find all top-level directories that look like numbered projects (01-, 02-, etc.)
+          echo "projects=$(ls -d 0*-*/ | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
-      - name: 🧪 Run Tests with Coverage
+      - name: 🧪 Run Tests and Generate Coverage
         run: |
-          pytest --cov=src --cov-report=term-missing --disable-warnings
+          for project in ${{ steps.projects.outputs.projects }}; do
+            echo "🚀 Running tests in $project"
 
-      - name: 💾 Save HTML Coverage Report (Artifact)
-        if: always()
-        run: pytest --cov=src --cov-report=html
-      - name: 📤 Upload Coverage Artifact
+            # Install dependencies if requirements.txt exists
+            if [ -f "${project}requirements.txt" ]; then
+              pip install -r "${project}requirements.txt"
+            else
+              echo "⚠️ No requirements.txt found in $project, skipping install"
+            fi
+
+            cd $project
+
+            # Run pytest with coverage and generate HTML report
+            mkdir -p htmlcov
+            pytest --cov=src --cov-report=term-missing --cov-report=html:htmlcov || exit 1
+
+            # Move report to distinguish between projects
+            mv htmlcov "../htmlcov_${project%/}"
+
+            cd ..
+          done
+
+      - name: 📤 Upload Coverage Reports for Each Project
         uses: actions/upload-artifact@v4
         with:
-          name: htmlcov
-          path: htmlcov
+          name: coverage_reports
+          path: htmlcov_*/
+
+      - name: 🧾 Summary
+        run: |
+          echo "### ✅ Coverage reports generated for the following projects:" >> $GITHUB_STEP_SUMMARY
+          ls -d htmlcov_*/ >> $GITHUB_STEP_SUMMARY
