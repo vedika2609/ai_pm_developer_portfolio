@@ -1,25 +1,22 @@
-from unittest.mock import patch
-import pandas as pd
-from src.llm_integration import summarize_df
+import pytest
 
+@pytest.fixture
+def test_summarize_financial_data_mock(monkeypatch):
+    import pandas as pd
+    from unittest.mock import MagicMock
+    from src import llm_integration
 
-@patch("src.llm_integration.summarize_df")
-def test_summarize_financial_data_mock(mock_summarize_df):
-    """Simulate LLM response to test summarization pipeline."""
-    # Arrange
-    df = pd.DataFrame({
-        "Revenue": [100, 200, 300],
-        "Profit": [20, 50, 80]
-    })
-    mock_summarize_df.return_value = (
+    df = pd.DataFrame({"Revenue": [100, 200, 300], "Profit": [20, 50, 80]})
+
+    mock_invoke = MagicMock()
+    mock_invoke.return_value.content = (
         "1️⃣ **Summary:** Revenue is increasing.\n"
         "2️⃣ **Trends:** Profit is stable."
     )
 
-    # Act
-    summary = summarize_df(df)
+    monkeypatch.setattr(llm_integration.llm, "invoke", mock_invoke)
 
-    # Assert
-    assert isinstance(summary, str)
+    summary = llm_integration.summarize_df(df)
+
     assert "Summary" in summary
     assert "Revenue" in summary

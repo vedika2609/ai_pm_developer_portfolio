@@ -9,7 +9,13 @@ from dotenv import load_dotenv
 from src import data_preprocessing as data
 
 load_dotenv()
-llm = ChatAnthropic(model_name="claude-3-7-sonnet-20250219",
+
+api_key = os.getenv("ANTHROPIC_API_KEY")
+if api_key is None:
+    print("⚠️ Warning: Anthropic API key not found, skipping LLM initialization.")
+    llm = None
+else:
+    llm = ChatAnthropic(model_name="claude-3-7-sonnet-20250219",
                     temperature=0.1,
                     timeout=None,
                     max_retries=10,
@@ -35,6 +41,10 @@ def summarize_df(financial_df: pd.DataFrame) -> str:
     """Summarize financial data using Anthropic Claude with structured chat prompt."""
     data_preview = financial_df.head(20).to_string(index=False)
     messages = SUMMARY_PROMPT.format_messages(data=data_preview)
+
+    if llm is None:
+        return "⚠️ No LLM available in test mode."
+
     llm_response = llm.invoke(messages)
     return llm_response.content if isinstance(llm_response.content, str ) else llm_response.content[0].text
 
