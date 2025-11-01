@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from src import data_preprocessing as data
 
 load_dotenv()
-llm = ChatAnthropic(model_name=os.getenv("claude-3-7-sonnet-20250219"),
+llm = ChatAnthropic(model_name="claude-3-7-sonnet-20250219",
                     temperature=0.1,
                     timeout=None,
                     max_retries=10,
