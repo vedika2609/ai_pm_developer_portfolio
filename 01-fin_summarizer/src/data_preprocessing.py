@@ -10,7 +10,7 @@ def convert_csv_to_df(csv_data) -> pd.DataFrame:
         return df
 
     except FileNotFoundError:
-        print("Error: file not available")
+        print("Error: file not found")
         return pd.DataFrame()  # Return an empty DataFrame on error
     except pd.errors.EmptyDataError:
         print("File data is empty")

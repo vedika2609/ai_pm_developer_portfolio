@@ -1,5 +1,8 @@
-
 # 💹 FinSummarizer – AI-Powered Financial Report Summarizer
+
+[![Tests](https://github.com/vedika2609/ai_pm_developer_portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/vedika2609/ai_pm_developer_portfolio/actions/workflows/tests.yml)
+![pytest coverage](https://img.shields.io/badge/coverage-65%25-brightgreen)
+
 End-to-end AI Product demo: from dataset ingestion → summarization → deployment → KPI tracking.
 
 FinSummarizer is a **Generative AI-powered tool** that transforms raw financial datasets (CSV format) and automatically generates **concise, human-readable summaries**.  
@@ -126,6 +129,8 @@ streamlit run app.py
 ```bash
 # Run all unit tests
 pytest tests/
+pytest --cov=src --cov-report=html #run tests and generate code coverage
+
 ```
 
 Example tests included:
