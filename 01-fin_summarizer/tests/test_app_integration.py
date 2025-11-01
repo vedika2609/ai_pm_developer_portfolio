@@ -2,8 +2,6 @@ import io
 import pandas as pd
 import pytest
 from unittest.mock import patch
-import asyncio
-
 
 import src.data_preprocessing as dp
 import src.llm_integration as llm
