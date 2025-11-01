@@ -102,7 +102,7 @@ FinSummarizer/
 
 ### **Prerequisites**
 - Python 3.11+
-- OpenAI API Key (or other LLM provider)
+- Anthropic API Key (or other LLM provider)
 - Git installed
 
 ### **Steps**
@@ -186,7 +186,7 @@ You are free to use, modify, and distribute this software with attribution.
 
 ## 🙌 Acknowledgements
 - [LangChain](https://www.langchain.com/) – Framework for LLM-powered apps.
-- [OpenAI](https://openai.com/) – Generative AI models.
+- [Anthropic](https://www.anthropic.com) – Generative AI models.
 - [Streamlit](https://streamlit.io/) – Rapid prototyping of data apps.
 
 ---
