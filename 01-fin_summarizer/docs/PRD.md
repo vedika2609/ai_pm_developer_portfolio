@@ -38,11 +38,11 @@ Key insights are buried, and decision-making becomes **slow, error-prone, and de
 ---
 
 ## 4. **Target Audience**
-| Persona | Role | Key Pain Points | Goals |
-|----------|------|----------------|-------|
-| Financial Analyst | Works with CSVs daily to generate reports | Time-consuming manual analysis | Faster, automated insights |
-| Product Manager (FinTech) | Builds products on top of financial data | Needs high-level insights without deep diving into data | Instant summaries for strategy |
-| Executive (CFO, CEO) | Decision-making at strategic level | Too busy to read detailed reports | Executive summaries in natural language |
+| Persona                   | Role                                      | Key Pain Points                                         | Goals                                   |
+|---------------------------|-------------------------------------------|---------------------------------------------------------|-----------------------------------------|
+| Financial Analyst         | Works with CSVs daily to generate reports | Time-consuming manual analysis                          | Faster, automated insights              |
+| Product Manager (FinTech) | Builds products on top of financial data  | Needs high-level insights without deep diving into data | Instant summaries for strategy          |
+| Executive (CFO, CEO)      | Decision-making at strategic level        | Too busy to read detailed reports                       | Executive summaries in natural language |
 
 ---
 
@@ -135,11 +135,11 @@ User → Streamlit Frontend → Backend (Python)
 ---
 
 ## 13. **Risks & Mitigations**
-| Risk | Impact | Mitigation |
-|------|--------|------------|
+| Risk              | Impact                    | Mitigation                   |
+|-------------------|---------------------------|------------------------------|
 | AI hallucinations | Low accuracy in summaries | Add validation & fine-tuning |
-| Large CSV files | Performance issues | Pre-processing optimizations |
-| API rate limits | Service disruptions | Implement caching + batching |
+| Large CSV files   | Performance issues        | Pre-processing optimizations |
+| API rate limits   | Service disruptions       | Implement caching + batching |
 
 
 ## 14. **Future Roadmap**

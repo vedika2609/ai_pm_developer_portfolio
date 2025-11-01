@@ -1,0 +1,16 @@
+# Core dependencies
+pandas>=2.1.0
+streamlit>=1.36.0
+python-dotenv>=1.0.1
+
+# LangChain + Anthropic (stable compatible versions)
+langchain==0.2.12
+langchain-core==0.2.21
+langchain-community==0.2.12
+langchain-anthropic==0.1.13
+anthropic>=0.25.0
+
+# Optional (for testing, retries, and performance)
+tenacity>=8.3.0
+pydantic==1.10.14
+pytest
