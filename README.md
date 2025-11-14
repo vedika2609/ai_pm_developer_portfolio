@@ -17,7 +17,7 @@ Each project here reflects:
 | Project              | Description                                    | Key Skills                    | Repo Link                                     |
 |----------------------|------------------------------------------------|-------------------------------|-----------------------------------------------|
 | Financial Summarizer | Gen AI-Powered Financial Report Summarizer	    | Agentic AI, API Orchestration | [View Project](./01-fin_summarizer/README.md) |
-| IntelLyst            | AI-powered, multi-agent research orchestrator	 | Agentic AI, API Orchestration | [View Project](./02-intelyst/README.md)       |
+| IntelLyst            | AI-powered, multi-agent research orchestrator	 | Agentic AI, API Orchestration | [View Project](./02-intelLyst/README.md)      |
 
 ## 💡 How to Navigate
 
