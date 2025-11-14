@@ -2,7 +2,7 @@
 
 Welcome to my **AI PM Developer Portfolio** — a curated collection of hands-on projects that blend **product strategy, AI systems design, and technical execution**.  
 
-With 11+ years in tech & product and industry experience building a **Generative AI Copilot and MCP server at Arcesium's data platform, Aquata**, I’m now upskilling into **Agentic AI, MCPs & LLMOps**   
+With 11+ years in tech & product and industry experience building a **Generative AI Copilot and MCP server at [Arcesium's](https://www.arcesium.com) data platform, [Aquata](https://aquata.ai)**, I’m now upskilling into **Agentic AI, MCPs & LLMOps**   
 
 Each project here reflects:
 - **AI Agent Foundations** → building with LangChain, LangGraph, RAG  
@@ -14,9 +14,10 @@ Each project here reflects:
 
 ## 📌 Portfolio Index
 
-| Project              | Description                                 | Key Skills                    | Repo Link                                     |
-|----------------------|---------------------------------------------|-------------------------------|-----------------------------------------------|
-| Financial Summarizer | Gen AI-Powered Financial Report Summarizer	 | Agentic AI, API Orchestration | [View Project](./01-fin_summarizer/README.md) |
+| Project              | Description                                    | Key Skills                    | Repo Link                                     |
+|----------------------|------------------------------------------------|-------------------------------|-----------------------------------------------|
+| Financial Summarizer | Gen AI-Powered Financial Report Summarizer	    | Agentic AI, API Orchestration | [View Project](./01-fin_summarizer/README.md) |
+| IntelLyst            | AI-powered, multi-agent research orchestrator	 | Agentic AI, API Orchestration | [View Project](./02-intelyst/README.md)       |
 
 ## 💡 How to Navigate
 
