@@ -36,11 +36,11 @@ To leverage my **dual strength in tech + product** and grow into an **AI Product
 
 ## 👤 Author
 **Vedika Gupta**  
-AI Product Manager | Building Generative AI Systems  
+AI Product Manager | Building AI Systems  
 - GitHub: [github.com/vedika-gupta](https://github.com/vedika2609)  
 - LinkedIn: [linkedin.com/in/vedika-gupta](https://www.linkedin.com/in/vedika26gupta/)
 
 ---
 ## 🧩 Portfolio Progression
-Each month adds a new AI PM project demonstrating increasing complexity — from data-centric to agentic and platform-level AI systems.
+Icrementally add a new AI PM project demonstrating increasing complexity — from data-centric to agentic and platform-level AI systems.
 

@@ -172,7 +172,7 @@ docker run -p 8501:8501 finsummarizer
 
 ## 👤 Author
 **Vedika Gupta**  
-AI Product Manager | Building Generative AI Systems  
+AI Product Manager | Building AI Systems  
 - GitHub: [github.com/vedika-gupta](https://github.com/vedika2609)  
 - LinkedIn: [linkedin.com/in/vedika-gupta](https://www.linkedin.com/in/vedika26gupta/)
 

@@ -53,6 +53,7 @@ def stream_financial_summary(financial_df: pd.DataFrame):
     data_preview = financial_df.head(20).to_string(index=False)
     messages = SUMMARY_PROMPT.format_messages(data=data_preview)
 
+
     for chunk in llm.stream(messages):
         if chunk.content:
             yield chunk.content
