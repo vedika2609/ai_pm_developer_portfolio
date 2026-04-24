@@ -69,6 +69,17 @@ Insights + Recommendations
 
 **Input:** CSV dataset
 
+### 📂 Sample Dataset
+
+We include a synthetic dataset with real-world data quality issues:
+
+- Missing values
+- Outliers
+- Invalid formats
+- Duplicate records
+
+This allows the agent to demonstrate multi-step reasoning and tool orchestration.
+
 **Agent reasoning:**
 
 1. Check missing values

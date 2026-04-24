@@ -1,0 +1,16 @@
+customer_id,age,email,signup_date,country,monthly_spend
+C001,25,john@example.com,2023-01-10,USA,1200
+C002,30,sarah@example.com,2023-02-15,India,800
+C003,,mike@example.com,2023-03-12,UK,950
+C004,-5,invalid_email,2023-04-01,USA,1100
+C005,200,lisa@example.com,2023-05-20,USA,3000
+C006,28,,2023-06-18,India,700
+C007,35,alex@example.com,not_a_date,Canada,650
+C008,40,jane@example.com,2023-07-25,USA,
+C009,32,john@example.com,2023-08-30,USA,1200
+C010,29,rohit@example,2023-09-10,India,500
+C011,31,emma@example.com,2023-10-05,UK,NaN
+C012,27,oliver@example.com,2023-11-11,USA,850
+C013,45,ava@example.com,2023-12-01,USA,999999
+C014,38,noah@example.com,2024-01-15,USA,1000
+C015,22,,2024-02-20,India,400
