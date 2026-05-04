@@ -109,23 +109,19 @@ This allows the agent to demonstrate multi-step reasoning and tool orchestration
 ```
 ai-data-quality-agent/
 │
-├── app.py
+├── app
+│   ├── main.py 
 ├── requirements.txt
 │
 ├── data/
 │
-├── src/
-│   ├── tools/
-│   │   ├── profiler.py
-│   │   ├── anomaly.py
-│   │   └── schema.py
-│   │
-│   ├── agent/
-│   │   └── agent_executor.py
-│   │
-│   └── utils/
+├── core/
+│   ├── agent_executor.py
+│   ├── ai_insights.py
+│   ├── anomaly_detection.py
+│   ├── profiling.py
+│   └── schema.py
 │
-├── prompts/
 │
 ├── docs/
 │   ├── PRD.md
