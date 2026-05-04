@@ -27,7 +27,9 @@ Your task:
 2. Explain why they matter
 3. Suggest actionable fixes
 
-Return output in JSON format:
+Return ONLY valid JSON. Do not include any text outside JSON.
+Do not use markdown.
+Ensure the response is strictly parseable.
 
 {{
   "summary": "...",
