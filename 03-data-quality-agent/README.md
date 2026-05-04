@@ -1,4 +1,5 @@
 # 🤖 AI Data Quality Agent – Agentic Data Observability System
+![App Preview](docs/images/hero.png)
 
 End-to-end AI Product demo: from dataset ingestion → agent reasoning → tool execution → insights → recommendations.
 
@@ -14,6 +15,14 @@ AI Data Quality Agent is an **agentic AI system** that autonomously detects data
 * AI-generated insights
 * Streamlit UI
 
+---
+## 🖥️ Demo
+
+### Upload & Analysis
+![Upload Screen](docs/images/upload.png)
+
+### AI Insights Output
+![Insights Screen](docs/images/insights.png)
 ---
 
 ## 🧠 What Makes This Different
