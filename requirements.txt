@@ -1,0 +1,8 @@
+pandas~=2.3.2
+langchain-anthropic~=0.1.17
+langchain-core~=0.2.43
+python-dotenv~=1.1.1
+pytest~=8.4.2
+streamlit~=1.50.0
+numpy~=1.26.4
+openai~=2.1.0
